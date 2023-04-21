@@ -7,166 +7,141 @@ Colors
 #F0EEE9 grey
 */
 
+.themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
+
+.themed-container {
+  padding: .75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
+
 html {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #F0EEE9;
+  min-height: 100vh;
+}
+
 header {
+  background-color: #762839;
+  color: #F0EEE9;
+  box-shadow: 0 4px 7px rgba(0,0,0,0.2);
   position: fixed;
   top: 0;
-  z-index: 999;
-	background-color: #762839;
-	color: #fff;
-	padding: 20px;
   width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-}
-
-.logo {
-	display: inline-block;
-	height: 120px;
-	width: 120px;
-	margin-right: 20px;
-}
-
-header h1 {
-	margin: 0;
-}
-
-header nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-}
-
-header li {
-	margin: 0 10px;
-}
-
-header a {
-	color: #fff;
-	text-decoration: none;
-}
-
-header a:hover {
-	text-decoration: underline;
-}
-
-body {
-  margin: 0;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-nav li {
-	margin: 0 10px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-nav a:hover {
-	text-decoration: underline;
-}
-
-body {
-  height: 100%;
 }
 
 main {
-  background-color: #FFFFFF;
-	margin: 90px auto 0 auto;
+  margin-top: 110px;
+}
+
+.nav-pills .nav-link {
+  color: #F0EEE9;
+  font-weight: bold;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+#intro {
+  padding-top: 110px;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 20px;
+  background-color: #AD6A63;
+  z-index: -3;
+}
+
+#intro:after {
+  background-image: linear-gradient(to left, #AD6A63 40%, transparent), url('images/fundo5.PNG');
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -2;
+}
+
+#intro img {
+  width: 500px;
+  heigth: auto;
+  position: absolute;
+  object-fit: cover;
+  bottom: -85px;
+  right: 0;
+  z-index: -1;
+}
+
+span.grafismo {
+  width: 150px;
+  height: 150px;
+  font-weight: 600;
+  background-color: rgba(205, 183, 167, 0.2);
+  margin: 20px auto;
+  box-shadow: 0 4px 7px rgba(0,0,0,0.15);
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  border-color: #762839;
+}
+
+img.grafismo1 {
+  width: 120px;
+  height: auto;
+  padding-top: 10px;
+}
+
+img.grafismo2 {
+  width: 65px;
+  height: auto;
+  padding-top: 15px;
+}
+
+img.grafismo3 {
+  width: 65px;
+  height: auto;
+  padding-top: 40px;
+}
+
+img.grafismo4 {
+  width: 65px;
+  height: auto;
+  padding-top: 30px;
+}
+
+#me, #psi, #online, #terapia, #intro, #grafismo, #contato {
+  color: #762839;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 section {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.section1 {
-  text-align: center;
+h3 {
+  margin-bottom: 40px;
 }
 
-.section1 h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.section2 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.section3 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.section4 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.section5 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.grid-cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-	grid-gap: 20px;
-}
-
-.card {
-	background-color: #D98A79;
-  color: #F0EEE9;
-	padding: 20px;
-	border-radius: 15px;
-	box-shadow: 0 0 10px rgba(0,0,0,.2);
-}
-
-.card h3 {
-	margin-top: 0;
-}
-
-.card p {
-	margin-bottom: 10px;
-}
-
-.card a {
-	display: block;
-	margin-top: 10px;
-	color: #F0EEE9;
-	font-weight: bold;
-	text-align: right;
-}
-
-.card a:hover {
-	color: #000;
-}
 
 footer {
-	position: absolute;
-	background-color: #762839;
-	color: #fff;
-	text-align: center;
-	width: 100%;
+  background-color: #CDB7A7;
+  height: 100px;
+  color: #F0EEE9;
+  box-shadow: 0 4px 7px rgba(0,0,0,0.2);
 }
