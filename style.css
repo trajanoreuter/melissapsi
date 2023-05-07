@@ -29,6 +29,10 @@ p {
   text-align: center;
 }
 
+#grafismo h4 {
+  text-align: center;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
 }
@@ -38,13 +42,17 @@ body {
   min-height: 100vh;
 }
 
-header {
+.main-header {
   background-color: #762839;
   color: #F0EEE9;
   box-shadow: 0 4px 7px rgba(0,0,0,0.2);
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.small-header {
+  display: none;
 }
 
 main {
@@ -61,18 +69,32 @@ main {
   height: auto;
 }
 
+#intro h4, #intro h5 {
+  text-align: center;
+  color: #F0EEE9;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#intro button a {
+  color: #F0EEE9;
+  text-decoration: none;
+}
+
+#intro button {
+  min-width: 200px;
+  margin-top: 20px;
+}
+
 #intro {
   padding-top: 110px;
   position: relative;
   width: 100%;
   height: 350px;
   margin-bottom: 20px;
-  background-color: #AD6A63;
-  z-index: -3;
 }
 
 #intro:after {
-  background-image: linear-gradient(to left, #AD6A63 40%, transparent), url('images/fundo5.PNG');
+  background-image: linear-gradient(to right, #AD6A63 40%, transparent), url('images/fundo3.PNG');
   content: ' ';
   display: block;
   position: absolute;
@@ -86,7 +108,6 @@ main {
   z-index: -2;
 }
 
-
 .intro {
   position: relative;
 }
@@ -95,7 +116,7 @@ main {
   width: 500px;
   heigth: auto;
   position: absolute;
-  bottom: -325px;
+  bottom: -158px;
   right: 0;
   z-index: -1;
 }
@@ -201,7 +222,7 @@ section {
 }
 
 .contato-box {
-  padding: 15px;
+  padding: 15px 15px 30px 15px;
   background-color: #CDB7A7;
   border-radius: 10px;
   box-shadow: 0 4px 7px rgba(0,0,0,0.2);
@@ -212,6 +233,16 @@ section {
 
 .contato-box p {
   text-align: center;
+}
+
+.contato-box p a {
+  color: #762839;
+  text-decoration: none;
+}
+
+.contato-box button a {
+  color: #F0EEE9;
+  text-decoration: none;
 }
 
 #contato {
@@ -231,4 +262,52 @@ section {
   background-size: cover;
   opacity: 0.8;
   z-index: -2;
+}
+
+svg {
+  fill: #762839;
+}
+
+.btn-one {
+  background-color: #762839;
+  border-color: #762839;
+  color: #F0EEE9;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.btn-one:hover {
+  background-color: #D98A79;
+  border-color: #762839;
+}
+
+.btn-one:focus {
+  background-color: #D98A79;
+  border-color: #762839;
+}
+
+.btn-one:active {
+  background-color: #D98A79;
+  border-color: #762839;
+}
+
+@media (max-width: 768px) {
+  .none {
+    display: none;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .small-header {
+    display: block;
+    background-color: #762839;
+    color: #F0EEE9;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
 }
