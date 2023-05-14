@@ -114,11 +114,11 @@ main {
   position: relative;
 }
 
-.intro img {
-  width: 500px;
-  heigth: auto;
+#intro img {
+  width: auto;
+  height: 500px;
   position: absolute;
-  bottom: -175px;
+  bottom: -172px;
   right: 0;
   z-index: -1;
 }
@@ -323,3 +323,9 @@ svg {
     margin-top: 10px;
   }
 }
+
+@media (max-width: 1199px) {
+  #intro img {
+    display: none;
+  }
+ }
