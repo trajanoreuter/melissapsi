@@ -9,6 +9,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Melissa Scaramussa - Psicóloga</title>
 	<link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11136584929"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11136584929');
+  </script>
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11136584929/WFmHCLaz9aMYEOGZq74p',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 </head>
 
 <body>
@@ -65,7 +89,7 @@
               <h3>EI, VOCÊ NÃO PRECISA ENFRENTAR TUDO SOZINHO!</h3>
               <h4>Invista em sua saúde mental, ela é a base para qualidade de vida e bem-estar.</h4>
               <h4>Quer ajuda?</h4>
-              <button type="button" class="btn btn-one"><a target="_blank" href="https://wa.me/+5527998077004?text=">Vamos conversar</a></button>
+              <button onclick="gtag_report_conversion()" type="button" class="btn btn-one"><a target="_blank" href="https://wa.me/+5527998077004?text=">Vamos conversar</a></button>
             </div>
             <div class="col-lg-3 none">
               <img src="images/melissa5.PNG" alt="melissa">
@@ -195,10 +219,10 @@
           <div class="col-lg-12 text-center">
             <div class="contato-box text-center">
               <h3>Contato</h3>
-              <p><a target="_blank" href="https://wa.me/+5527998077004?text="><svg class="bi bi-whatsapp" width="24" height="24"><use xlink:href="#whatsapp"/></svg> (27) 99807-7004</a></p>
+              <p><a onclick="gtag_report_conversion()" target="_blank" href="https://wa.me/+5527998077004?text="><svg class="bi bi-whatsapp" width="24" height="24"><use xlink:href="#whatsapp"/></svg> (27) 99807-7004</a></p>
               <p><a target="_blank" href="http://instagram.com/_u/melissascaramussa.psi/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg> melissascaramussa.psi</a></p>
               <p><a target="_blank" href="mailto:melissa.festa.scaramussa@gmail.com"><svg class="bi bi-envelope" width="24" height="24"><use xlink:href="#email"/></svg> melissa.festa.scaramussa@gmail.com</a></p>
-              <button type="button" class="btn btn-one"><a target="_blank" href="https://wa.me/+5527998077004?text=">Mande uma mensagem</a></button>
+              <button onclick="gtag_report_conversion()" type="button" class="btn btn-one"><a target="_blank" href="https://wa.me/+5527998077004?text=">Mande uma mensagem</a></button>
             </div>
           </div>
         </div>
@@ -217,7 +241,7 @@
       </div>
       <ul class="nav col-lg-8 justify-content-end list-unstyled d-flex">
         <li class="ms-3"><a class="text-body-secondary" target="_blank" href="http://instagram.com/_u/melissascaramussa.psi/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" target="_blank" href="https://wa.me/+5527998077004?text="><svg class="bi bi-whatsapp" width="24" height="24"><use xlink:href="#whatsapp"/></svg></a></li>
+        <li class="ms-3"><a onclick="gtag_report_conversion()" class="text-body-secondary" target="_blank" href="https://wa.me/+5527998077004?text="><svg class="bi bi-whatsapp" width="24" height="24"><use xlink:href="#whatsapp"/></svg></a></li>
         <li class="ms-3"><a class="text-body-secondary" target="_blank" href="mailto:melissa.festa.scaramussa@gmail.com"><svg class="bi bi-envelope" width="24" height="24"><use xlink:href="#email"/></svg></a></li>
       </ul>
     </div>
