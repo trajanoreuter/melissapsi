@@ -21,6 +21,25 @@ Colors
   border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
 }
 
+.call p {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 1.275rem;
+}
+
+#call {
+  background-color: #CDB7A7;
+  padding-bottom: 0 !important;
+  position: relative;
+}
+
+.call img {
+  height: auto;
+  width: 70%;
+  margin-top: 20px;
+}
+
 p {
   text-align: justify;
 }
@@ -160,13 +179,9 @@ img.grafismo4 {
   padding-top: 30px;
 }
 
-#me, #psi, #online, #terapia, #intro, #grafismo, #contato {
+#me, #psi, #online, #terapia, #intro, #grafismo, #contato, #woman, #call {
   color: #762839;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-section {
-  margin-bottom: 40px;
 }
 
 h3 {
@@ -190,10 +205,12 @@ footer {
 }
 
 #me img {
+  margin-top: 15%;
   width: 70%;
 }
 
 #terapia img {
+  margin-top: 15%;
   width: 40%;
 }
 
@@ -202,11 +219,11 @@ footer {
   width: 70%;
 }
 
-#online {
+#online, #woman {
   background-color: #AD6A63;
 }
 
-#online {
+#online, #woman {
   color: #F0EEE9;
 }
 
