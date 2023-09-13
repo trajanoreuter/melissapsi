@@ -40,6 +40,15 @@ Colors
   margin-top: 20px;
 }
 
+.whatsapp-icon {
+  height: 50px;
+  width: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99999999;
+}
+
 p {
   text-align: justify;
 }
