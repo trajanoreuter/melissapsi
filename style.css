@@ -320,7 +320,24 @@ svg {
   border-color: #762839;
 }
 
+.video {
+  width: 100%;
+  height: 380px;
+  margin-top: 120px;
+}
+
+@media (max-width: 991px) {
+  .video {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 768px) {
+  .video {
+    margin-top: 15px;
+    height: 200px;
+  }
+
   .none {
     display: none;
   }
